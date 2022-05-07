@@ -33,3 +33,15 @@ sidebar_home_link:  true
                                 # page. If you change your paginate_path,
                                 # set this to the root of the paginate_path
                                 # to enable a separate blog link.
+
+github:
+  repo:             https://github.com/abahramali
+
+# twitter:            https://twitter.com/chandakyash13
+# facebook:           https://www.facebook.com/yashchandak.13
+linkedin:           www.linkedin.com/in/alireza-bahramali-166ba1122
+scholar:            https://scholar.google.com/citations?user=ed6f5vcAAAAJ&hl=en
+
+
+# Include all files under '_pages' as files in root directory
+include: ['_pages']
