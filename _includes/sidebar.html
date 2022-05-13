@@ -1,7 +1,9 @@
 <div id="sidebar">
+  <center>
   <header>
+    <img src="/images/me.JPG" alt="" width="75%" align="center" >
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <a href="{{ "/" | relative_url }}">
+      <a href="{{ site.baseurl }}/">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
         {% endunless %}
@@ -10,12 +12,18 @@
     </{% if page.layout == "index" %}h1{% else %}div{% endif %}>
     <p class="lead">{{ site.description }}</p>
   </header>
+
   {% include sidebar-nav-links.html %}
 
-  {% if site.version %}
+  <p>
+    <br>
+  </p>
+
+  <!-- {% if site.version %}
     <span class="site-version">Currently v{{ site.version }}</span>
-  {% endif %}
+  {% endif %} -->
 
   {% include sidebar-icon-links.html %}
   {% include copyright.html %}
+  </center>
 </div>

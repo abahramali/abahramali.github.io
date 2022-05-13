@@ -1,22 +1,23 @@
-<nav id="sidebar-icon-links">
-  {% if site.hydeout.repo %}
+<center>
+  <nav style="list-style: none; margin: auto; width: 85%; justify-content: center;" id="sidebar-icon-links">
+    {% if site.github.repo %}
     <a id="github-link"
        class="icon" title="Github Project" aria-label="Github Project"
-       href="{{ site.hydeout.repo }}">
+       href="{{ site.github.repo }}">
       {% include svg/github.svg %}
     </a>
-    <a id="github-download-link"
+    <!-- <a id="github-download-link"
        class="icon" title="Download" aria-label="Download"
        href="{{ site.hydeout.repo }}/archive/v{{ site.hydeout.version }}.zip">
       {% include svg/download.svg %}
-    </a>
+    </a> -->
   {% endif %}
 
-  <a id="subscribe-link"
+  <!-- <a id="subscribe-link"
      class="icon" title="Subscribe" aria-label="Subscribe"
      href="{{ site.feed.path | default: 'feed.xml' | relative_url }}">
     {% include svg/feed.svg %}
-  </a>
+  </a> -->
 
   {% comment %}
     Check if we have tag or search pages page active before linking to it.
@@ -31,23 +32,24 @@
     {% endif %}
   {% endfor %}
 
-  {% if tags_page %}
-    <a id="tags-link"
-       class="icon{% if page.url == '/tags' %} active{% endif %}"
-       title="Tags" aria-label="Tags"
-       href="{{ tags_page.url | relative_url }}">
-      {% include svg/tags.svg %}
+  {% if site.linkedin %}
+    <a id="linkedin-link"
+       class="icon"
+       title="linkedin" aria-label="Linkedin"
+       href="{{ site.linkedin }}">
+      {% include svg/linkedin.svg %}
     </a>
   {% endif %}
 
-  {% if search_page %}
-    <a id="search-link"
-       class="icon{% if page.url == '/search' %} active{% endif %}"
-       title="Search" aria-label="Search"
-       href="{{ search_page.url | relative_url }}">
-      {% include svg/search.svg %}
+  {% if site.scholar %}
+    <a id="scholar-link"
+       class="icon"
+       title="scholar" aria-label="Google Scholar"
+       href="{{ site.scholar }}">
+      {% include svg/scholar.svg %}
     </a>
   {% endif %}
 
   {% include custom-icon-links.html %}
-</nav>
+  </nav>
+</center>
