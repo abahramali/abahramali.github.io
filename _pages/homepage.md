@@ -38,7 +38,7 @@ paper {
 
 <br>
 
-<!--<img align="left" width=150px src="/images/dp.jpg"> -->
+<!--<img align="left" width=150px src="/images/me.JPG"> -->
 
 I'm a PhD candidate at the [College of Information and Computer Sciences, UMass Amherst](https://www.cics.umass.edu/). I'm also a member of [The Secure, Private Internet Research Group (SPIN)](https://people.cs.umass.edu/~amir/Research.html) working under the supervison of Prof. [Amir Houmansadr](https://people.cs.umass.edu/~amir/index.php). My research lies in the intersection of machine learning and security and privacy. Currently, I'm working on using self-supervised and semi-supervised machine learning algorithms to design limited-data traffic analysis techniques.
 <br><br>
