@@ -3,6 +3,29 @@ layout: default
 ---
 
 <div class="content">
+  {{ content }}
+
+  {% assign pages_list = site.pages %}
+  {% for post in pages_list %}
+
+  {% comment %}
+    for post in paginator.posts # this will only select pages under '_posts'
+  {% endcomment %}
+
+  {% if post.title == 'homepage' %}
+  <article class="post-body">
+
+    {% include post-meta.html post=post %}
+
+    {{ post.content }}
+
+  </article>
+  {% endif %}
+  {% endfor %}
+</div>
+
+
+<!-- <div class="content">
   {% include pagination-newer.html %}
 
   {{ content }}
@@ -39,4 +62,4 @@ layout: default
   {% endfor %}
 
   {% include pagination-older.html %}
-</div>
+</div> -->
