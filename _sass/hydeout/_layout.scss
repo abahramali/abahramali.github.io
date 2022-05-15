@@ -23,12 +23,16 @@
 */
 
 body {
-  background-attachment: fixed;
+  color: rgba(255,255,255,.75);
   background-color: $sidebar-bg-color;
-  background-image: linear-gradient(to bottom, lighten($sidebar-bg-color, 7%), darken($sidebar-bg-color, 7%));
-  color: $sidebar-text-color;
+  background-image: linear-gradient(
+    to bottom,
+    lighten($sidebar-bg-color, 7%),
+    darken($sidebar-bg-color, 7%));
+
   display: flex;
   flex-direction: column;
+  min-width: 100vw;
   min-height: 100vh;
 }
 
@@ -37,14 +41,33 @@ body {
   padding: $section-spacing;
 
   .site-title {
-    font-family: 'Abril Fatface', serif;
-    font-size: $large-font-size;
+    font-family: "Abril Fatface", serif;
     font-weight: normal;
-    margin-bottom: $heading-spacing;
-    margin-top: 0;
-  }
+    //font-size: $large-font-size;
+    font-size: $medium-font-size;
+    color: rgba(255,255,255,.75);
+    //margin-top: 0;
+    //margin-bottom: $heading-spacing;
+    margin:auto;
 
-  .site-title .back-arrow { margin-right: 0.5rem; }
+    a {
+      color: inherit;
+      &:hover { color: white; }
+    }
+
+    .back-arrow { margin-right: 0.5rem; }
+  }
+}
+
+// Container is flexbox as well -- we want content div to stretch and fill
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+
+  > .content {
+    flex-grow: 1;
+  }
 }
 
 .content {
@@ -53,17 +76,6 @@ body {
   padding: $section-spacing;
 }
 
-// Container is flexbox as well -- we want content div to stretch and fill
-.container {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-
-  > .content {
-    flex-grow: 1;
-    padding-bottom: $section-spacing * 2;
-  }
-}
 
 /* -----------------------------------------------------------
   Mobile view
@@ -72,9 +84,7 @@ body {
 // Hide secondary nav content in sidebar
 // Hide lead paragraph in sidebar
 #sidebar {
-  header ~ *,
-  header ~ nav,
-  p.lead {
+  header ~ *, header ~ nav, p.lead {
     display: none;
   }
 }
@@ -82,22 +92,20 @@ body {
 // Make header elements blend into sidebar / background
 .container > header {
   background: transparent;
-  color: $sidebar-title-color;
-  margin:
-    ($heading-spacing - $section-spacing)
-    $section-spacing
-    $section-spacing;
+  color: white;
+  margin: ($heading-spacing - $section-spacing)
+          $section-spacing
+          $section-spacing;
 
-  h1,
-  h2 {
-    color: inherit;
-  }
+  h1, h2 {
+    color: white;
 
-  h1:last-child,
-  h2:last-child {
-    margin-bottom: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
+
 
 /* -----------------------------------------------------------
   Mobile view for home page)
@@ -110,17 +118,20 @@ body {
 
   // Bigger title
   .site-title {
-    font-size: 3.25rem;
+    //font-size: 3.25rem;
+    font-size: 2.00rem;
+    color: white;
   }
 
   // Show secondary nav content + lead
-  header ~ *,
-  p.lead {
+  header ~ *, p.lead {
     display: block;
   }
 
-  header ~ nav {
-    display: flex;
+  header {
+    ~ nav {
+      display: flex;
+    }
   }
 
   // Slightly more bottom padding to compensate for heading not match 100% of
@@ -130,6 +141,7 @@ body {
   }
 }
 
+
 /* -----------------------------------------------------------
   Tablet / Desktop view
 ----------------------------------------------------------- */
@@ -137,22 +149,16 @@ body {
 @media (min-width: $large-breakpoint) {
   body {
     flex-direction: row;
-    min-height: 100vh;
-    -webkit-overflow-scrolling: touch;
-    overflow-y: auto;
-
-    > * {
-      -webkit-overflow-scrolling: touch;
-      overflow-y: auto;
-    }
+    height: 100vh;
+    overflow: auto;
+    > * { max-height: 100vh; overflow: auto; }
   }
 
   /* Undo mobile CSS */
 
-  #sidebar,
-  .home #sidebar {
-    text-align: left;
+  #sidebar, .home #sidebar {
     width: $sidebar-width;
+    text-align: left;
 
     > *:last-child {
       margin-bottom: 0;
@@ -160,33 +166,15 @@ body {
   }
 
   #sidebar {
-    position: fixed;
-
-    // Attach to bottom or top of window
-    @if $sidebar-sticky {
-      bottom: 0;
-    }
-
-    @else {
-      top: 0;
-    }
-
-    // Attach to right or left of window
-    @if $layout-reverse {
-      right: 0;
-    }
-
-    @else {
-      left: 0;
-    }
-
     .site-title {
-      font-size: 3.25rem;
+      //font-size: 3.25rem;
+      font-size: 2.00rem;
+      
+      a { color: white; }
       .back-arrow { display: none; }
     }
 
-    p.lead,
-    header ~ * {
+    p.lead, header ~ * {
       display: block;
     }
 
@@ -195,32 +183,19 @@ body {
     }
   }
 
-  .index #sidebar { margin-bottom: 0; }
+   .index #sidebar { margin-bottom: 0; }
 
   // Make entire container background white to contrast against sidebar
   .container {
     background: $body-bg;
     color: $body-color;
-    min-height: 100vh;
-    padding:
-      $section-spacing * 2
-      $section-spacing * 2
-      0;
-
-    @if $layout-reverse {
-      margin-right: $sidebar-width;
-    }
-
-    @else {
-      margin-left: $sidebar-width;
-    }
+    padding: $section-spacing * 2;
+    height: 100vh;
 
     > header {
-      color: $heading-color;
+      color: inherit;
       margin: 0;
-
-      h1,
-      h2 {
+      h1, h2 {
         color: inherit;
 
         &:last-child {
@@ -230,46 +205,38 @@ body {
     }
 
     > * {
-      max-width: 38rem;
+      max-width:80rem;
       padding: 0;
     }
   }
 }
+
 
 /* -----------------------------------------------------------
   Sidebar links + nav
 ----------------------------------------------------------- */
 
 #sidebar a {
-  color: $sidebar-link-color;
+  color: #fff;
 
   svg {
-    fill: $sidebar-icon-color;
+    fill: rgba(255, 255, 255, 0.85);
   }
-}
 
-#sidebar a:hover,
-#sidebar a:focus,
-#sidebar a.active {
-  svg { fill: $sidebar-icon-color; }
-}
-
-#sidebar a:hover,
-#sidebar a:focus {
-  text-decoration: underline;
-
-  &.icon {
-    text-decoration: none;
+  &:hover, &:focus, &.active {
+    svg { fill: #fff; }
   }
-}
 
-#sidebar a.active {
-  font-weight: bold;
-}
+  &:hover, &:focus {
+    text-decoration: underline;
+    &.icon {
+      text-decoration: none;
+    }
+  }
 
-#sidebar .site-title {
-  color: $sidebar-title-color;
-  a { color: inherit; }
+  &.active {
+    font-weight: bold;
+  }
 }
 
 #sidebar nav {
@@ -281,14 +248,14 @@ body {
 }
 
 #sidebar-icon-links {
+  max-width: 100%;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 1rem;
-  max-width: 100%;
 
   @media (min-width: $large-breakpoint) {
-    justify-content: flex-start;
     margin-left: -0.25em;
+    justify-content: flex-start;
   }
 }
 
@@ -298,32 +265,39 @@ body {
 }
 
 #sidebar nav > .icon {
-  display: inline-block;
   font-size: 1.5rem;
+  display: inline-block;
   margin: 0 0.25em;
 }
 
-@media print {
-  #sidebar {
-    display: none;
-  }
 
-  body {
-    display: block;
-  }
+/* -----------------------------------------------------------
+  Sticky sidebar
 
-  .container {
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
+  Set $sidebar-stick variable to affix sidebar contents to the
+  bottom of the sidebar in tablets and up.
+----------------------------------------------------------- */
 
-    > * {
-      max-width: 100%;
+@if $sidebar-sticky {
+  @media (min-width: $large-breakpoint) {
+    body {
+      align-items: flex-end;
     }
   }
+}
 
-  html {
-    font-size: normal;
+
+/* -----------------------------------------------------------
+  Reverse layout
+
+  Flip the orientation of the page by placing the `#sidebar`
+  on the right.
+----------------------------------------------------------- */
+
+@if $layout-reverse {
+  @media (min-width: $large-breakpoint) {
+    .container {
+      order: -1;
+    }
   }
 }
