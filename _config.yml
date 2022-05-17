@@ -6,7 +6,7 @@ encoding:         utf-8
 # Setup
 title:            Alireza Bahramali
 tagline:          'Personal Webpage'
-description:      'a[lastname]@cs.umass.edu'
+description:      'abahramali(at)cs.umass.edu'
 url:              https://abahramali.github.io/abahramali
 baseurl:          # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
