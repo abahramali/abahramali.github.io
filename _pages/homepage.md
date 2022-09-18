@@ -50,15 +50,23 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 
 
 ## News
+<p>
 <b>2022</b>: Machine Learning Engineer Intern at <a href="https://www.truveta.com/">Truveta</a>.
 - Improved entity detection and ontology alignment tasks using sequence-to-sequence transformers. 
+</p>
 
+<p>
 <b>2022</b>: Proposed my PhD thesis: "_Towards Encrypted Network Traffic Analysis_".
+</p>
 
+<p>
 <b>2021</b>: Data Science Intern at <a href="https://www.faire.com/">Faire</a>.
 - Designed a recommender system to recommend products from the same brand.
+</p>
 
+<p>
 <b>2020</b>: Completed my Masters's in Computer Science from the <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>.
+</p>
 
 ## Publictions
 
