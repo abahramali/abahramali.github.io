@@ -51,49 +51,7 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 
 
 ## News
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-
-<tr>
-    <td width="5%"  valign="middle"> <b>2022</b>
-    </td>
-
-    <td valign="middle" width="80%">
-          <p>
-              <b>Intern at </b> <a href="https://www.truveta.com/">Truevta</a>.
-              <br>
-          </p>  
-    </td>
-
-</tr>
-
-<tr>
-    <td width="5%"  valign="middle"> <b>2021</b>
-    </td>
-
-    <td valign="middle" width="80%">
-          <p>
-              <b>Intern at </b> <a href="https://www.faire.com/">Faire</a>.
-              <br>
-          </p>  
-    </td>
-
-</tr>
-
-<tr>
-    <td width="5%"  valign="middle"> <b>2020</b>
-    </td>
-
-    <td valign="middle" width="80%">
-          <p>
-              <b> Completed my Master's in Computer Science from the </b> <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>.
-              <br>
-          </p>  
-    </td>
-
-</tr>
-
-</table>
+* <b>2021</b>   Intern at Truveta
 
 ## Publictions
 
