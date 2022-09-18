@@ -49,6 +49,30 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 - Security and Privacy in Machine Learning
 - Recommender Systems
 
+
+## News
+
+<br>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+
+<tr>
+    <td width="5%"  valign="middle"> <b>2022</b>
+    </td>
+
+    <td valign="middle" width="80%">
+          <p>
+              <b>Intern at </b> <a href="https://www.truveta.com/">Truevta</a>.
+              <br>
+          </p>  
+    </td>
+
+</tr>
+
+</table>
+
+<br>
+
 ## Publictions
 
 <p>
