@@ -52,7 +52,7 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 
 ## News
 <b>2022</b>: Intern at <a href="https://www.truveta.com/">Truveta</a>.
->> asdasdasasa
+** asdasdasasa
 
 <b>2021</b>: Intern at <a href="https://www.faire.com/">Faire</a>.
 
