@@ -44,17 +44,17 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 <br><br>
 
 ## Research Interests
-- Machine Learning in Network Traffic Analysis
-- Machine Learning in Wireless Communication Systems
-- Security and Privacy in Machine Learning
+- Machine Learning in Security and Privacy
+- Natural Language Processing in Healthcare
 - Recommender Systems
 
 
 ## News
-<b>2022</b>: Intern at <a href="https://www.truveta.com/">Truveta</a>.
-** asdasdasasa
+<b>2022</b>: Machine Learning Engineer Intern at <a href="https://www.truveta.com/">Truveta</a>.
 
-<b>2021</b>: Intern at <a href="https://www.faire.com/">Faire</a>.
+<b>2022</b>: Proposed my PhD thesis: ___Towards Encrypted Network Traffic Analysis___
+
+<b>2021</b>: Data Science Intern at <a href="https://www.faire.com/">Faire</a>.
 
 <b>2020</b>: Completed my Masters's in Computer Science from the <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>.
 
