@@ -51,7 +51,12 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 
 
 ## News
-* <b>2021</b>   Intern at Truveta
+<b>2022</b>: Intern at <a href="https://www.truveta.com/">Truveta</a>.
+>> asdasdasasa
+
+<b>2021</b>: Intern at <a href="https://www.faire.com/">Faire</a>.
+
+<b>2020</b>: Completed my Masters's in Computer Science from the <a href="https://www.cics.umass.edu/">University of Massachusetts Amherst</a>.
 
 ## Publictions
 
