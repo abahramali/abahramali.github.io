@@ -73,7 +73,6 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 ## Publictions
 
 
-#### 2023
 <p>
 <paper>Truveta Mapper: A Zero-shot Ontology Alignment Framework</paper>
 <br>
@@ -90,7 +89,6 @@ Submitted to the 32nd International Joint Conference on Artifical Intelligence (
 </p>
 
 
-#### 2022
 <p>
 <paper>I Still Know What You Did Last Summer: Inferring Sensitive User Activities on Messaging Applications Through Traffic Analysis</paper>
 <br>
