@@ -72,6 +72,42 @@ I'm a PhD candidate at the [College of Information and Computer Sciences, UMass 
 
 ## Publictions
 
+
+#### 2023
+<p>
+<paper>Truveta Mapper: A Zero-shot Ontology Alignment Framework</paper>
+<br>
+Mariyam Amir, Murchana Baruah, Mahsa Eslamialishah, Sina Ehsani, <b>Alireza Bahramali</b>, Sadra Naddaf-Sh, Saman Zarandioon
+<br>
+Submitted to the 32nd International Joint Conference on Artifical Intelligence (IJCAI-23)
+<details>
+    <summary>Abstract | <a href='https://arxiv.org/pdf/2301.09767.pdf'>PDF</a>
+        </summary>
+    <p class='message'>
+    In this paper, a new perspective is suggested for unsupervised Ontology Matching (OM) or Ontology Alignment (OA) by treating it as a translation task. Ontologies are represented as graphs, and the translation is performed from a node in the source ontology graph to a path in the target ontology graph. The proposed framework, Truveta Mapper (TM), leverages a multi-task sequence-to-sequence transformer model to perform alignment across multiple ontologies in a zero-shot, unified and end-to-end manner. Multi-tasking enables the model to implicitly learn the relationship between different ontologies via transfer-learning without requiring any explicit cross-ontology manually labeled data. This also enables the formulated framework to outperform existing solutions for both runtime latency and alignment quality. The model is pre-trained and fine-tuned only on publicly available text corpus and inner-ontologies data. The proposed solution outperforms state-of-the-art approaches, Edit-Similarity, LogMap, AML, BERTMap, and the recently presented new OM frameworks in Ontology Alignment Evaluation Initiative (OAEI22), offers log-linear complexity in contrast to quadratic in the existing end-to-end methods, and overall makes the OM task efficient and more straightforward without much post-processing involving mapping extension or mapping repair.
+    </p>
+</details>
+</p>
+
+
+#### 2022
+<p>
+<paper>I Still Know What You Did Last Summer: Inferring Sensitive User Activities on Messaging Applications Through Traffic Analysis</paper>
+<br>
+Ardavan Bozorgi, <b>Alireza Bahramali</b>, Fateme Rezaei, Amirhossein Ghaffari, Amir Houmansadr, Ramin Soltani, Dennis Goeckel, Don Towsley
+<br>
+IEEE Transactions on Dependable and Secure Computing (TDSC 2022)
+<details>
+    <summary>Abstract | <a href='https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=9933634'>PDF</a>
+        </summary>
+    <p class='message'>
+    Instant Messaging (IM) applications such as Signal, Telegram, and WhatsApp have become tremendously popular in recent years. Unfortunately, such IM services have been targets of governmental surveillance and censorship, as these services are home to public and private communications on socially and politically sensitive topics. To protect their clients, popular IM services deploy state-of-the-art encryption. Despite the use of advanced encryption, we show that popular IM applications leak sensitive information about their clients to adversaries merely monitoring their encrypted IM traffic, with no need for leveraging any software vulnerabilities of IM applications. Specifically, we devise traffic analysis attacks enabling an adversary to identify participants of target IM communications (e.g., forums) with high accuracies. We believe that our study demonstrates a significant, real-world threat to the users of such services.
+    We demonstrate the practicality of our attacks through extensive experiments on real-world IM communications. We show that standard countermeasure techniques can degrade the effectiveness of these attacks. We hope our study will encourage IM providers to integrate effective traffic obfuscation into their software. In the meantime, we have designed a countermeasure system, called IMProxy that can be used by IM clients with no need for any support from IM providers. We demonstrate the effectiveness of IMProxy through simulation and experiments.
+    </p>
+</details>
+</p>
+
+
 <p>
 <paper>Robust Adversarial Attacks Against DNN-Based Wireless Communication Systems</paper>
 <br>
