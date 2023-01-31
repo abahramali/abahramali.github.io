@@ -42,8 +42,8 @@ paper {
 
 #### 2023
 <p>
-<br>
 <paper>Truveta Mapper: A Zero-shot Ontology Alignment Framework</paper>
+<br>
 Mariyam Amir, Murchana Baruah, Mahsa Eslamialishah, Sina Ehsani, <b>Alireza Bahramali</b>, Sadra Naddaf-Sh, Saman Zarandioon
 <br>
 Submitted to the 32nd International Joint Conference on Artifical Intelligence (IJCAI-23)
@@ -59,8 +59,8 @@ Submitted to the 32nd International Joint Conference on Artifical Intelligence (
 
 #### 2022
 <p>
-<br>
 <paper>I Still Know What You Did Last Summer: Inferring Sensitive User Activities on Messaging Applications Through Traffic Analysis</paper>
+<br>
 Ardavan Bozorgi, <b>Alireza Bahramali</b>, Fateme Rezaei, Amirhossein Ghaffari, Amir Houmansadr, Ramin Soltani, Dennis Goeckel, Don Towsley
 <br>
 IEEE Transactions on Dependable and Secure Computing (TDSC 2022)
